@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="body">
+    <div class="left">
+      <div class="contents">
+
+        <!-- Sidebar start -->
+        <div class="side-content one">
+          <span class="active"><span>1</span>
+          </span>
+          <div class="d-none">
+            <p class="step">Step 1</p>
+            <p class="c-down">Your info</p>
+
+          </div>
+        </div>
+        <div class="side-content two">
+          <span>2</span>
+          <div class="d-none">
+
+            <p class="step">Step 2</p>
+            <p class="c-down">Select plan</p>
+          </div>
+        </div>
+        <div class="side-content three">
+          <span>3</span>
+          <div class="d-none">
+
+            <p class="step">Step 3</p>
+            <p class="c-down">Add-ons</p>
+          </div>
+
+        </div>
+        <div class="side-content four">
+          <span>4</span>
+          <div class="d-none">
+
+            <p class="step">Step 4</p>
+            <p class="c-down">Summary</p>
+          </div>
+        </div>
+
+        <!-- Sidebar end -->
+      </div>
+      <div class="div-btn none">
+
+        <button class="btn"><a href="stage2.html">Next Step</a></button>
+      </div>
+    </div>
+    <div class="right">
+
+      <div class="right-content">
+
+        <!-- Step 1 start -->
+        <div class="top">
+          <h1 class="title">Personal info</h1>
+          <span>Please provide your name, email address, and phone number.</span>
+        </div>
+        <div class="form">
+          <form class="form">
+            <label for="name" class="field-title">
+              Name
+            </label>
+            <br />
+            <input type="text" name="name" id="name" placeholder=" e.g. Stephen King" required>
+            <br />
+            <label for="email" class="field-title">
+              Email Address
+            </label>
+            <br />
+            <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com">
+            <br />
+            <label for="num" class="field-title">
+              Phone Number
+            </label>
+            <br />
+            <input type="number" name="num" id="num" placeholder="e.g. +1 234 567 890">
+            <br />
+            <button type="submit" class="next btn d-none">Next
+              Step</button>
+            <!-- <button type="submit" class="btn d-none"><a href="stage2.html">Next
+                Step</a></button> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
